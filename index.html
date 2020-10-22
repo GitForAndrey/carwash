@@ -221,7 +221,8 @@
 					</div>
 				</div></div>
 		</div>
-	</section></div><div id="block129776" class="block-wrapper block-repo-9600"><section><div class="countercontone g-bg-primary">
+	</section></div>
+	<div id="block129776" class="block-wrapper block-repo-9600"><section><div class="countercontone g-bg-primary">
 			<div class="counterone"  data-fileid="96112">	
 				<div class="counterblockone col-xl-10 col-md-10 col-sm-12 mx-auto wow fadeIn"><div class="counterblockcountcontone">
 						<div class="counterblockcountone g-bg-main">
@@ -317,6 +318,77 @@
 			</div>
 		</div>
 	</section></div>
+	<div class="block-wrapper block-repo-9600">
+		<section>
+			<div class="questions-block g-bg-primary">
+				<div class="footertitlesix col-11 mx-auto g-color-blue questions-block-title">
+Часто задаваемые вопросы</div>
+	<div class="panel">
+		<div class="panel-heading">
+			<div href="#"><i class="fa fa-shopping-cart"></i>Для чего нужна санитарная обработка ? </div>
+		</div>
+		<div class="panel-collapse">
+			<div class="panel-body">
+				<p>В соответствии с установленными санитарно-эпидемиологическими нормами торговыми организациями должна регулярно проводиться санитарная обработка кузова автомобиля (дезинфекция), который используется для перевозки продуктов питания, сырья, людей и животных.  
+Данная процедура предотвращает образование в автомобиле плесени и грибка, который может появляться даже в морозильных камерах. Также санобработка кузова автомобиля позволяет избавиться от налета, неприятных запахов, а также следов пребывания насекомых в авто. </p>
+				
+				</div>
+				
+			</div>
+		</div>
+	
+	<div class="panel">
+		<div class="panel-heading">
+			<div href="#"><i class="fa fa-shopping-cart"></i>Как проводится санитарная обработка?</div>
+		</div>
+		<div class="panel-collapse">
+			<div class="panel-body">
+				<p> <ol>
+					<li>холодный туман</li>
+					<li>орошение</li>
+					<li>озонирование</li>
+					</ol>
+Для каждого конкретного случая, в борьбе с бактериями и вирусами используем наиболее приемлемый, инновационный метод обработки.
+				
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="panel">
+		<div class="panel-heading">
+			<div href="#"><i class="fa fa-shopping-cart"></i>Какие дезинфектанты используем?</div>
+		</div>
+		<div class="panel-collapse">
+			<div class="panel-body">
+				<p> Химические вещества которые соответствуют гигиенической регламентации и прошли государственную регистрацию  в порядке, установленном законодательством Украины.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="panel">
+		<div class="panel-heading">
+			<div href="#"><i class="fa fa-shopping-cart"></i>Какая законодательная база?</div>
+		</div>
+		<div class="panel-collapse">
+			<div class="panel-body">
+				<p>
+Закон Украины:
+					<br>
+Об обеспечении санитарного и эпидемического благополучия населения;
+<br>
+Об основных принципах и требования к безопасности и качества пищевых продуктов;
+<br>
+О защите населения от инфекционных болезней;
+<br>
+О согласовании материалов Правил перевозок грузов автомобильным транспортом в Украине;
+<br>
+				</p>
+			</div>
+		</div>
+	</div>
+			</div>	
+		</section>
+	</div>
 	<div id="block129780" class="block-wrapper block-repo-4516">
 		<section class="">
 			<div class="footercontsix wow fadeIn" >
@@ -392,6 +464,16 @@
         });
         DG.marker([48.400, 35.043]).addTo(map).bindPopup('Автомойка ул.Стартовая, 14');
         DG.marker([48.503, 35.105]).addTo(map).bindPopup('Автомойка ул.Винокурова, 5');
+    });
+</script>
+<script>
+	$(document).ready(function () {
+
+		$('.panel-heading').click(function () {
+			$(this).toggleClass('in').next().slideToggle();
+			$('.panel-heading').not(this).removeClass('in').next().slideUp();
+        });
+
     });
 </script>
 
